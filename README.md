@@ -115,4 +115,52 @@ The system is composed of the following major modules:
 | C Language | 100–200 µs |
 | Python | ~500 µs |
 
-### Calculation:
+
+✅ **Performance Gain:**
+- ~68.6% faster than C implementation
+- ~10× faster than Python
+
+---
+
+## 📊 Design Specifications
+
+- **Dataset Size:** 128 points  
+- **Dimensions:** 4 per point  
+- **Bit Width:** 8-bit per dimension  
+- **Clusters:** 8  
+- **Clock Frequency:** 100 MHz  
+- **Total Cycles:** 3840  
+
+---
+
+## 🛠️ How to Run
+
+1. Open your preferred HDL simulator (ModelSim / Vivado / etc.)
+2. Compile all `.v` files
+3. Load the `top_module` as the design under test
+4. Apply:
+   - Clock signal
+   - Reset signal
+   - Start pulse
+5. Observe:
+   - Cluster assignments
+   - Centroid updates
+   - `done` signal
+
+---
+
+## 📈 Applications
+
+- Real-time data clustering
+- Edge AI hardware accelerators
+- Signal processing systems
+- Embedded machine learning
+
+---
+
+## 📌 Conclusion
+
+This project demonstrates how **hardware acceleration using Verilog** can drastically improve the performance of iterative algorithms like K-Means. By leveraging **parallelism, pipelining, and efficient FSM control**, the design achieves high-speed clustering suitable for real-time and embedded applications.
+
+---
+
